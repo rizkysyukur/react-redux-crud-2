@@ -2,7 +2,7 @@ import "./App.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addItemToCart } from "./MyStore/reducers/cartSlice";
 
-export default App = () => {
+const App = () => {
     const laptop = useSelector((store) => store.laptop);
     const cart = useSelector((store) => store.cart);
     const dispatch = useDispatch();
@@ -34,3 +34,5 @@ export default App = () => {
         </>
     )
 }
+
+export default App;
